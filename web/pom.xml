@@ -50,7 +50,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
           <executable>true</executable>
-          <mainClass>com.hjl.EurekaServerStart</mainClass>
+          <mainClass>com.hjl.web.Webstart</mainClass>
         </configuration>
         <executions>
           <execution>

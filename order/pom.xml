@@ -46,7 +46,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
           <executable>true</executable>
-          <mainClass>com.hjl.EurekaServerStart</mainClass>
+          <mainClass>com.hjl.order.OrderStart</mainClass>
         </configuration>
         <executions>
           <execution>
