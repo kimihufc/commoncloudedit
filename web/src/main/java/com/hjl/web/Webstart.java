@@ -8,8 +8,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 /**
  * @author: HJL
  * @create: 2018-12-30 12:32
+ * 排坑记  因为熔断在com.hjl.client.hystrix 导致主类扫描未扫描到
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.hjl"})
 @EnableFeignClients(basePackages = {"com.hjl"})
 @EnableHystrix
 public class Webstart {

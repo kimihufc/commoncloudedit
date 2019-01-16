@@ -1,5 +1,6 @@
 package com.hjl.client;
 
+import com.hjl.client.hystrix.OrderClientHystrix;
 import com.hjl.dd.Order;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +13,7 @@ import java.util.List;
  *  拍坑记
  *    使用FeignClient  value里面的值不能有 _  这个值对应着提供服务的 spring.application.name
  */
-@FeignClient(value = "common-order",path = "order")
+@FeignClient(value = "common-order",path = "order",fallback = OrderClientHystrix.class)
 public interface OrderClient {
 
     @GetMapping(value = "gainOrderList")
