@@ -15,6 +15,7 @@
     <module>invoke</module>
     <module>bean</module>
     <module>commoneureka</module>
+    <module>gateway</module>
   </modules>
 
   <name>commitEdit</name>
